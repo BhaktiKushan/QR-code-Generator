@@ -10,12 +10,15 @@ body{
     justify-content: center;
     height: 100vh;
     padding: 0 20px;
+    background-image: url("image/pic.avif");
 }
 
 .container{
-    background-color: rgb(92, 48, 48);
+    background-color: transparent;
+    backdrop-filter: blur(100px);
     padding: 10px 20px;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 #input-text{
