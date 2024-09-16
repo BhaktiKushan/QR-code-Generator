@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Genertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/Ln0Ar.jpg">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <input type="text" placeholder="Enter QR code" id="input-text">
+        <div class="boxer">
+            <img src=""  id="img-box">
+        </div>
+        
+
+        <button onclick="generator()">Generate</button>
+    </div>
+
+    
+    <script>
+        const imgbox= document.querySelector("#img-box")
+        const text= document.querySelector("#input-text")
+        
+        function generator(){
+            imgbox.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+text.value;
+        }
+
+    </script>
+</body>
+</html>
